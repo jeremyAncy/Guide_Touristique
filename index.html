@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Overflow by HTML5 UP</title>
+		<title>Rome</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -50,6 +50,11 @@
 					
 					
 				}
+				
+				$(".showMore").click(function(){
+					$("#listmonumentsnts").hide();
+					$("#monuments").show();
+				});
 			
 				$("#monuments").hide();
 				
@@ -86,20 +91,6 @@
 					<a href="#banner" class="button style2 scrolly-middle">Proceed as anticipated</a>
 				</footer>
 			</section>
-
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>This is Overflow</h2>
-				</header>
-				<p>A brand new site template designed by <a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>.<br />
-				It’s fully responsive, built on <strong>skel</strong>, and of course entirely free<br />
-				under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
-				</footer>
-			</section>
-		
 		</div>
 		
 		<div id="monumentsntsPrincipaux">
@@ -110,7 +101,8 @@
 					<header>
 						<h2>Le Vatican</h2>
 					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
+					<p>Le Vatican, officiellement l'État de la Cité du Vatican, (en italien : Stato della Città del Vaticano) est un pays d'Europe. Il s'agit du support territorial du Saint-Siège enclavé dans la ville italienne de Rome. En 2014, il compte 921 habitants sur une superficie totale de 0,44 km², ce qui en fait le plus petit État au monde.</p>
+					<a href="#monumentVatican" class="showMore">En savoir plus</a>
 				</div>
 			</article>
 
@@ -121,7 +113,8 @@
 					<header>
 						<h2>Le Colisée</h2>
 					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
+					<p>Le Colisée, à l'origine amphithéâtre Flavien (Colosseo en italien), est un immense amphithéâtre elliptique situé dans le centre de la ville de Rome, entre l'Esquilin et le Cælius, le plus grand jamais construit dans l'empire romain. Il est l'une des plus grandes œuvres de l'architecture et de l'ingénierie romaines.</p>
+					<a href="#monumentColisee" class="showMore">En savoir plus</a>
 				</div>
 			</article>
 		</div>	
@@ -149,9 +142,29 @@
 						<h2>Le Pantheon</h2>
 					</header>
 					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
-				</div>
-				
+				</div>	
 			</article>
+			
+			<article id ="monumentColisee" class="container box style1 right">
+				<a href="#" class="image fit"><img src="images/monuments/coliseRome.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Le Colisée</h2>
+					</header>
+					<p>Le Colisée, à l'origine amphithéâtre Flavien (Colosseo en italien), est un immense amphithéâtre elliptique situé dans le centre de la ville de Rome, entre l'Esquilin et le Cælius, le plus grand jamais construit dans l'empire romain. Il est l'une des plus grandes œuvres de l'architecture et de l'ingénierie romaines.</p>
+				</div>	
+			</article>
+			
+			<article id ="monumentVatican" class="container box style1 right">
+				<a href="#" class="image fit"><img src="images/monuments/vatican.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Le Vatican</h2>
+					</header>
+					<p>Le Vatican, officiellement l'État de la Cité du Vatican, (en italien : Stato della Città del Vaticano) est un pays d'Europe. Il s'agit du support territorial du Saint-Siège enclavé dans la ville italienne de Rome. En 2014, il compte 921 habitants sur une superficie totale de 0,44 km², ce qui en fait le plus petit État au monde.</p>
+				</div>	
+			</article>
+			
 			<center><button id="locPantheon" style="padding-top: 2%;height: 60px;" class="button style4">Afficher localisation</button></center>
 			<center><button id="hideListmonumentsnts" class="button style2">Précédent</button></center>
 		</div>
