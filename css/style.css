@@ -18,6 +18,7 @@
 /*fenetre modale*/
 	.modalDialog {
 		position: fixed;
+		overflow-y: auto;
 		font-family: "times new roman", times, serif;
 		top: 0;
 		right: 0;
