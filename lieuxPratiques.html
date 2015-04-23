@@ -55,24 +55,81 @@
 					$("#listmonumentsnts").hide();
 					$("#monuments").show();
 				});
-			
-				$("#monuments").hide();
 				
-				$("#listmonumentsnts").click(function(){
+				//restauration
+				$("#restauration").hide();
+				
+				$("#listRestaurants").click(function(){
 						console.log("élément caché, on le montre");
-						$("#listmonumentsnts").hide();
-						$("#monuments").slideDown(4000);
+						$("#hebergement").hide();
+						$("#nocturne").hide();
+						$("#famille").hide();
+						$("#listDivRestaurants").hide();
+						$("#restauration").slideDown(4000);
 				});
 				
-				$("#hideListmonumentsnts").click(function(){
+				$("#hidelistRestaurants").click(function(){
 						console.log("élément visible, on le cache");
-						$("#listmonumentsnts").show();
-						$("#monuments").slideUp(4000);
+						$("#listDivRestaurants").show();
+						$("#restauration").slideUp(4000);
+				});
+				//Hébergement
+				$("#hebergement").hide();
+				
+				$("#listHebergement").click(function(){
+						console.log("élément caché, on le montre");
+						$("#restauration").hide();
+						$("#nocturne").hide();
+						$("#famille").hide();
+						$("#listDivHebergement").hide();
+						$("#hebergement").slideDown(4000);
+				});
+				
+				$("#hidelistHebergements").click(function(){
+						console.log("élément visible, on le cache");
+						$("#listDivHebergements").show();
+						$("#hebergement").slideUp(4000);
+				});
+				//nocturne
+				$("#nocturne").hide();
+				
+				$("#listNocturne").click(function(){
+						console.log("élément caché, on le montre");
+						$("#restauration").hide();
+						$("#hebergement").hide();
+						$("#famille").hide();
+						$("#listDivNocturnes").hide();
+						$("#nocturne").slideDown(4000);
+				});
+				
+				$("#hidelistNocturnes").click(function(){
+						console.log("élément visible, on le cache");
+						$("#listDivNocturnes").show();
+						$("#nocturne").slideUp(4000);
 				});
 				
 				$("#locPantheon").click(function(){
 						console.log("pantheon");
 				});
+				
+				//famille
+				$("#famille").hide();
+				
+				$("#listFamiliales").click(function(){
+						console.log("élément caché, on le montre");
+						$("#restauration").hide();
+						$("#nocturne").hide();
+						$("#hebergement").hide();
+						$("#listDivFamilles").hide();
+						$("#famille").slideDown(4000);
+				});
+				
+				$("#hidelistFamilles").click(function(){
+						console.log("élément visible, on le cache");
+						$("#listDivFamilles").show();
+						$("#famille").slideUp(4000);
+				});
+				
 			});
 		</script>
 		
@@ -88,51 +145,199 @@
 					<p>Agence de Tourisme de la ville de Rome</p>
 				</header>
 				<footer>
-					<a href="#monumentsntsPrincipaux" class="button style2 scrolly-middle">Monuments phares de Rome</a>
+					<a href="index.html" class="button style2 scrolly-middle">Monuments phares de Rome</a>
 				</footer>
 			</section>
 		</div>
 		
-		<footer>
-				<a href="lieuxPratiques.html" class="button style2 scrolly-middle" style="width: 20%;margin-left: 40%;">Lieux pratiques</a>
-		</footer>
 		
-		<div id="monumentsntsPrincipaux">
-		<!-- Feature 1 -->
+		
+		<center>
+			<button id="listRestaurants" class="button style2">Restauration</button>
+			<button id="listHebergement" class="button style2">Hébergement</button>
+			<button id="listNocturne" class="button style2">Vie nocturne</button>
+			<button id="listFamiliales" class="button style2">Activités familiales</button>
+		</center>
+			
+			
+		<!-- liste des restaurants -->
+		<div id="restauration" class="container sousPage">
+			<!-- Feature 1 -->
 			<article class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/monuments/Vatican.jpg" alt="" /></a>
+				<a href="#" class="image fit"><img src="http://i.imgur.com/wxOV4pK.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Le Vatican</h2>
+						<h2>Antico Arco</h2>
 					</header>
-					<p>Le Vatican, officiellement l'État de la Cité du Vatican, (en italien : Stato della Città del Vaticano) est un pays d'Europe. Il s'agit du support territorial du Saint-Siège enclavé dans la ville italienne de Rome. En 2014, il compte 921 habitants sur une superficie totale de 0,44 km², ce qui en fait le plus petit État au monde.</p>
-					<a href="#monumentVatican" class="showMore">En savoir plus</a>
+					<p>Adresse  : Piazzale Aurelio, 7, 00152 Roma, Italie</p>
+					<p>Horaires : 12:00 – 15:00, 19:00 – 00:00</p>
 				</div>
 			</article>
 
-		<!-- Feature 2 -->
+			<!-- Feature 2 -->
 			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/monuments/coliseRome.jpg" alt="" /></a>
+				<a href="#" class="image fit"><img src="http://i.imgur.com/MbwGj9H.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Le Colisée</h2>
+						<h2>Il Convivio Troiani</h2>
 					</header>
-					<p>Le Colisée, à l'origine amphithéâtre Flavien (Colosseo en italien), est un immense amphithéâtre elliptique situé dans le centre de la ville de Rome, entre l'Esquilin et le Cælius, le plus grand jamais construit dans l'empire romain. Il est l'une des plus grandes œuvres de l'architecture et de l'ingénierie romaines.</p>
-					<a href="#monumentColisee" class="showMore">En savoir plus</a>
+					<p>Adresse  : Vicolo dei Soldati, 31, 00186 Roma, Italie</p>
+					<p>Horaires :  20:00 – 23:00</p>
+				</div>	
+			</article>
+			
+			<article class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://i.imgur.com/ReyWq6H.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Pizzeria Da Baffetto</h2>
+					</header>
+					<p>Adresse  :  Via del Governo Vecchio, 114, 00186 Roma, Italie</p>
+					<p>Horaires :  12:00 – 15:00, 18:30 – 00:30</p>
+				</div>	
+			</article>
+			
+			<center><button id="hidelistRestaurants" class="button style2">Précédent</button></center>
+		</div>
+		<!--fin resto -->
+		
+		<!-- liste des hebergements -->
+		<div id="hebergement" class="container sousPage">
+			<!-- Feature 1 -->
+			<article id="test" class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://i.imgur.com/YavdoYy.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Hotel Domidea</h2>
+					</header>
+					<p>L'Hotel Domidea est un établissement 4 étoiles moderne qui propose des 
+					chambres design avec connexion Wi-Fi gratuite et télévision à écran 
+					plat. Un bus à destination de la station de métro Rebibbia s'arrête à 50
+					 mètres.</p>
+					 <p>Adresse : Via Raffaele Costi 17/21, Prenestino, 00155 Rome, Italie </p>
+					 <p>Horaires : 6h00 - 0h00</p>
+					 <p>Tarif : 49 € la nuit</p>
 				</div>
 			</article>
-		</div>	
-			<center><button id="listmonumentsnts" class="button style2">Cliquez ici pour voir la liste monuments</button></center>
+
+			<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="#" class="image fit"><img src="http://i.imgur.com/Gt0s7jC.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Hotel Capannelle Roma</h2>
+					</header>
+					<p>Doté d'une piscine ouverte en été, l'Hotel Capannelle se situe à 
+proximité du parc Appia Antica de Rome. Ses chambres climatisées 
+bénéficient d'une connexion Wi-Fi gratuite.</p>
+<p>Adresse : Via Siderno, 37, Appio-Latino, 00178 Rome, Italie</p>
+					 <p>Horaires : 24h/24</p>
+					 <p>Tarif : 39 € la nuit</p>
+				</div>	
+			</article>
 			
+			<article class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://i.imgur.com/E0kCcU1.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>The Independent Hotel</h2>
+					</header>
+					<p>L'établissement The Independant Hotel propose d'élégantes chambres 
+modernes dotées d'une connexion Internet gratuite et de grands lits 
+pourvus d'épais matelas. Il se trouve dans le centre de Rome, à 
+150 mètres des thermes de Dioclétien et de la gare Termini. Son 
+toit-terrasse donne sur la ville.</p>
+<p>Adresse : Via Volturno 48, Gare de Termini, 00185 Rome, Italie</p>
+					 <p>Horaires : 24h/24</p>
+					 <p>Tarif : 144 € la nuit</p>
+				</div>	
+			</article>
 			
-		<!-- liste des monuments -->
-		<div id="monuments" class="container sousPage">
+			<article class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://i.imgur.com/TsMd9sN.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Friendly Vatican House</h2>
+					</header>
+					<p>Doté d'une grande terrasse avec vue sur la ville et d'une connexion 
+Wi-Fi gratuite, le Friendly Vatican House est un appartement spacieux 
+climatisé pourvu d'une télévision à écran plat. La station de métro 
+Valle Aurelia et la gare vous attendent à 1 km.</p>
+<p>Adresse : Via Pio VIII 5, Vatican, 00165 Rome, Italie</p>
+					 <p>Horaires : 7h00 - 0h00</p>
+					 <p>Tarif : 199 € la nuit</p>
+				</div>	
+			</article>
+			
+			<center><button id="hidelistHebergements" class="button style2">Précédent</button></center>
+		</div>
+		<!--fin hebergement -->
+		
+		<!-- liste des nocturnes -->
+		<div id="nocturne" class="container sousPage">
+			<!-- Feature 1 -->
+			<article id="test" class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://www.europetrotteur.com/images/rome/boite%20gilda.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Gilda Club</h2>
+					</header>
+					<p>Le Gilda club est une boîte de nuit sélecte de Rome. Elle fête ses 20 
+ans cette année et organise pour cela encore plus d’évènements que 
+d’habitude, ce qui est stupéfiant aux vues du nombre impressionnant de 
+soirées variées usuellement mise en place par l’établissement.</p>
+					 <p>Adresse :   Via Mario de' Fiori, 97  00187 Roma, Italie</p>
+					 <p>Horaires : 23h00 - 04h00</p>
+					 <p>Tarif : 20 € l'entrée</p>
+				</div>
+			</article>
+
+			<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="#" class="image fit"><img src="http://www.europetrotteur.com/images/rome/boite%20Circolo%20degli%20artisti.JPG" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Circolo degli artisti</h2>
+					</header>
+					<p>Le Circolo degli artisti est le lieu favori des artistes rock 
+indépendants de Rome. Cette immense salle de concerts propose ainsi 
+régulièrement des concerts rocks, mais également électro dans une 
+ambiance déchaînée. Des soirées plus calmes sont aussi organisées et 
+laissent dès lors place à l’art théâtral.</p>
+				<p>Adresse : Via Casilina Vecchia, 42  00182 Roma, Italie</p>
+					 <p>Horaires : 23h00-05h00</p>
+					 <p>Tarif : Gratuit</p>
+				</div>	
+			</article>
+			
+			<article class="container box style1 right">
+				<a href="#" class="image fit"><img src="http://europetrotteur.com/images/rome/bibliotechina.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>La Bibliotechina</h2>
+					</header>
+					<p>La Bibliotechina est une boîte de nuit très connue à Rome, et 
+très appréciée pendant la période estivale : le club est en fait… un 
+jardin ! C’est donc un cadre idéal que les danseurs se déhanchent l’été,
+ lorsque les températures à Rome peuvent monter très, très haut.</p>
+					<p>Adresse :    Romolo Murri, 84, 00144 Roma, Italie</p>
+					 <p>Horaires : 20h à 3h30 (boite de nuit), 12h-15h (restaurant)</p>
+					 <p>Tarif : 10 €</p>
+				</div>	
+			</article>
+						
+			<center><button id="hidelistNocturnes" class="button style2">Précédent</button></center>
+		</div>
+		<!--fin nocturne -->
+		
+		<!-- liste des familles -->
+		<div id="famille" class="container sousPage">
 			<!-- Feature 1 -->
 			<article id="test" class="container box style1 right">
 				<a href="#" class="image fit"><img src="images/monuments/trevi.jpg" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>La fontaine de Trevi</h2>
+						<h2>Famille 1</h2>
 					</header>
 					<p>La fontaine de Trevi (fontana di Trevi) est un monument du XVIIIe siècle, un des sites touristiques les plus célèbres de Rome. Elle est situé dans le rione de Trevi, sur la Piazza di Trevi, est adossée au Palais Poli.</p>
 				</div>
@@ -227,9 +432,10 @@
 				</div>
 			</div>
 			
-			<center><button id="hideListmonumentsnts" class="button style2">Précédent</button></center>
+			<center><button id="hidelistFamilles" class="button style2">Précédent</button></center>
 		</div>
-
+		<!--fin famille -->
+		
 		<!-- Portfolio -->
 			<article class="container box style2">
 				<header>
@@ -279,162 +485,6 @@
 				</form>
 			</article>
 
-		<!-- Generic -->
-		<!--
-			<article class="container box style3">
-				<header>
-					<h2>Generic Box</h2>
-					<p>Just a generic box. Nothing to see here.</p>
-				</header>
-				<section>
-					<header>
-						<h3>Paragraph</h3>
-						<p>This is a subtitle</p>
-					</header>
-					<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-					habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-					leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-					amet risus elit.</p>
-				</section>
-				<section>
-					<header>
-						<h3>Blockquote</h3>
-					</header>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-					tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
-				</section>
-				<section>
-					<header>
-						<h3>Divider</h3>
-					</header>
-					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-					<hr />
-					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-				</section>
-				<section>
-					<header>
-						<h3>Unordered List</h3>
-					</header>
-					<ul class="default">
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-					</ul>
-				</section>
-				<section>
-					<header>
-						<h3>Ordered List</h3>
-					</header>
-					<ol class="default">
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-					</ol>
-				</section>
-				<section>
-					<header>
-						<h3>Table</h3>
-					</header>
-					<div class="table-wrapper">
-						<table class="default">
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Name</th>
-									<th>Description</th>
-									<th>Price</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>45815</td>
-									<td>Something</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>24524</td>
-									<td>Nothing</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>45815</td>
-									<td>Something</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>24524</td>
-									<td>Nothing</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>19.99</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td colspan="3"></td>
-									<td>100.00</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-				</section>
-				<section>
-					<header>
-						<h3>Form</h3>
-					</header>
-					<form method="post" action="#">
-						<div class="row">
-							<div class="6u">
-								<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-							</div>
-							<div class="6u">
-								<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<select name="department" id="department">
-									<option value="">Choose a department</option>
-									<option value="1">Manufacturing</option>
-									<option value="2">Administration</option>
-									<option value="3">Support</option>
-								</select>
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<ul class="actions">
-									<li><input type="submit" value="Submit" /></li>
-									<li><input type="reset" class="style3" value="Clear Form" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</section>
-			</article>
-		-->
 
 		<section id="footer">
 			<ul class="icons">
